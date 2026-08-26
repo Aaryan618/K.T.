@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Gift</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="birthday-overlay" id="birthdayOverlay"></div>
+<div class="birthday-banner">
+  <span class="deco left">🎂</span>
+  <span>Happy Birthday!</span>
+  <span class="deco right">🧁</span>
+</div>
+
+<div class="gift-stage">
+  <div class="gift-wrap" id="giftWrap">
+    <div class="hero-panel">
+      <span class="corner-deco tl">🎀</span>
+      <span class="corner-deco tr">✨</span>
+      <span class="corner-deco bl">🌸</span>
+      <span class="corner-deco br">🎈</span>
+
+      <div class="hero-left">
+        <button class="msg-btn" id="msgBtn">
+          <span>💌</span> message for you
+        </button>
+        <button class="gift-btn" id="giftBtn">
+          <span>🎁</span> special gift for My Angel
+        </button>
+      </div>
+
+      <div class="hero-right">
+        <div class="angel-photo"><img src="image/img 0.png" alt="Dear Angel" loading="lazy"></div>
+        <span class="angel-caption">Dear Kajal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="stage-title"><span>🌸</span> Your Photo Album <span>🌸</span></div>
+
+  <div class="scene">
+    <div class="book" id="book">
+      <div class="spine"></div>
+      <div class="base"></div>
+
+      <div class="pages" id="pages"></div>
+
+      <div class="final-page" id="finalPage">
+        <span class="final-deco a">🌸</span>
+        <span class="final-deco b">🎀</span>
+        <span class="final-deco c">✨</span>
+        <p class="final-title">The End</p>
+        <p class="final-sub">thanks for reliving these moments</p>
+        <div class="final-btn-row">
+          <button class="final-note-btn" id="finalNoteBtn">💌 one more note</button>
+          <button class="final-close-btn" id="finalCloseBtn">🏠 close album</button>
+        </div>
+      </div>
+
+      <div class="cover" id="cover">
+        <div class="face front">
+          <span class="cover-doodle d1">🌸</span>
+          <span class="cover-doodle d2">✨</span>
+          <span class="cover-doodle d3">🎀</span>
+          <span class="cover-doodle d4">🌷</span>
+          <span class="cover-doodle d5">💫</span>
+          <span class="cover-doodle d6">🍄</span>
+          <div class="cover-frame">
+            <p class="cover-title">My Memories</p>
+            <p class="cover-sub">a little collection of moments</p>
+            <div class="bow">
+              <span class="bow-icon">🎀</span>
+              <span class="bow-label">open</span>
+            </div>
+          </div>
+        </div>
+        <div class="face back"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="ctrl-btn" id="prevBtn" aria-label="Previous page">&#8592;</button>
+    <span class="page-count" id="pageCount">1 / 4</span>
+    <button class="ctrl-btn" id="nextBtn" aria-label="Next page">&#8594;</button>
+    <button class="ctrl-btn" id="muteBtn" aria-label="Toggle music">🔊</button>
+    <button class="close-btn" id="closeBtn">🏠 close &amp; return home</button>
+  </div>
+  </div>
+</div>
+
+<!--
+  Background music: put an audio file at this path (relative to this HTML
+  file) and it will play softly on a loop whenever the album is opened,
+  pausing automatically when it's closed. Swap the src for any sweet,
+  royalty-free tune you like — a few good free sources: Pixabay Music,
+  YouTube Audio Library, or Free Music Archive.
+-->
+<audio id="bgMusic" src="music/bgm.mp3" loop preload="none"></audio>
+
+<div class="message-overlay" id="messageOverlay">
+  <div class="message-card">
+    <span class="msg-deco tl">🌷</span>
+    <span class="msg-deco tr">🎀</span>
+    <button class="message-close" id="messageClose">✕</button>
+    <p class="message-title">For You, My Angel 💕</p>
+    <p class="message-body">
+      Wishing you the most magical birthday, filled with laughter,
+      love, and all your favorite little things. May this new year
+      bring you endless smiles, sweet surprises, and beautiful
+      memories to hold onto. You deserve all the happiness in the
+      world today and always.
+    </p>
+    <p class="message-signature">Happy Birthday! 🎂✨</p>
+  </div>
+</div>
+
+<div class="message-overlay" id="finalNoteOverlay">
+  <div class="message-card">
+    <span class="msg-deco tl">✨</span>
+    <span class="msg-deco tr">💌</span>
+    <button class="message-close" id="finalNoteClose">✕</button>
+    <p class="message-title">One Last Thing... 🌸</p>
+    <p class="message-body">
+      Thank you for flipping through every page of these memories
+      with me. Every photo here is a little piece of something I
+      truly treasure, and I hope looking back on them made you
+      smile as much as making this did for me, at last please talk to me i have something to ask you and it is more important for me to know it.
+    </p>
+    <p class="message-signature">With all my love 💕</p>
+  </div>
+</div>
+    <script src="index.js"></script>
+  </body>
+</html>

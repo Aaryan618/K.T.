@@ -1,0 +1,25 @@
+{
+  "name": "k-t",
+  "version": "1.0.0",
+  "description": "A special birthday gift photo album",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaryan618/K.T..git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aaryan618/K.T./issues"
+  },
+  "homepage": "https://github.com/Aaryan618/K.T.#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}

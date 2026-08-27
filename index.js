@@ -1,3 +1,7 @@
+// Initialize Vercel Web Analytics
+import { inject } from '@vercel/analytics';
+inject();
+
 const pagesData = [
   {
     src: "image/img 1.png",
